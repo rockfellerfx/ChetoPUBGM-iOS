@@ -352,6 +352,141 @@ bool isObjectInvalid(UObject *obj) {
     }
     return false;
 }
+// Function addresses
+const uintptr_t UWorld = 0x106684010;
+const uintptr_t GNames = 0x104C0F1E8;
+const uintptr_t hookHUD = 0x108687C80;
+const uintptr_t GetHUD = 0x1034AAF1C;
+const uintptr_t DrawText = 0x10633B4E0;
+const uintptr_t DrawLine = 0x105F52364;
+const uintptr_t DrawRectFilled = 0x105F522D4;
+const uintptr_t DrawCircleFilled = 0x10633B94C;
+const uintptr_t Engine = 0x10A4A0768;
+const uintptr_t BonePos = 0x1031DEDEC;
+const uintptr_t ProjectWorldLocationToScreen = 0x105EFB82C;
+// Struct member offsets
+const uintptr_t CurrentWeapon = 0x2A54;
+const uintptr_t STExtraBaseCharacter = 0x28E0;
+const uintptr_t GameState = 0x428;
+const uintptr_t bNoAliveHumanPlayer = 0xB1C;
+const uintptr_t AlivePlayerNum = 0xB8C;
+const uintptr_t ElapsedTime = 0x500;
+const uintptr_t NoneAIGameTime = 0xB94;
+const uintptr_t PlayerNum = 0x800;
+const uintptr_t RealPlayerNum = 0x800;
+const uintptr_t AliveTeamNum = 0xB90;
+const uintptr_t PlayerNumPerTeam = 0xF64;
+const uintptr_t GameModeID = 0x10D0;
+const uintptr_t CurCircleWave = 0xB18;
+const uintptr_t GameReplayType = 0xA1C;
+const uintptr_t PersistentLevel = 0x30;
+const uintptr_t NetDriver = 0x38;
+const uintptr_t ServerConnection = 0x78;
+const uintptr_t PlayerController = 0x30;
+const uintptr_t AcknowledgedPawn = 0x528;
+const uintptr_t RootComponent = 0x208;
+const uintptr_t CurrentStates = 0x1018;
+const uintptr_t LastUpdateVelocity = 0x330;
+const uintptr_t TeamId = 0x998;
+const uintptr_t IsBot = 0xA49;
+const uintptr_t Name = 0x960;
+const uintptr_t Nation = 0x970;
+const uintptr_t IsDead = 0xE44;
+const uintptr_t PlayerUID = 0x988;
+const uintptr_t Health = 0xE28;
+const uintptr_t HealthMax = 0xE2C;
+const uintptr_t NearDeathBreath = 0x1B60;
+const uintptr_t NearDeatchComponent = 0x1B48;
+const uintptr_t BreathMax = 0x1CC;
+const uintptr_t ControlRotation = 0x4E0;
+const uintptr_t ComponentVelocity = 0x2C0;
+const uintptr_t CurrentVehicle = 0xE70;
+const uintptr_t ReplicatedMovement = 0x110;
+const uintptr_t RelativeLocation = 0x1E4;
+const uintptr_t RelativeRotation = 0x1F0;
+const uintptr_t Mesh = 0x510;
+const uintptr_t BodyAddv = 0x198;
+const uintptr_t MinLOD = 0x984;
+const uintptr_t CurrentWeaponReplicated = 0x5C8;
+const uintptr_t WeaponManagerComponent = 0x2588;
+const uintptr_t BulletTrackDistance = 0x930;
+const uintptr_t CurrentReloadWeapon = 0x3128;
+const uintptr_t ShootWeaponComponent = 0xF30;
+const uintptr_t ShootMode = 0x1089;
+const uintptr_t OwnerShootWeapon = 0x2D0;
+const uintptr_t CurBulletNumInClip = 0x0;
+const uintptr_t CurMaxBulletNumInOneClip = 0xFD0;
+const uintptr_t ShootWeaponEntity = 0x12C0;
+const uintptr_t ShootWeaponEffectComp = 0x12C8;
+const uintptr_t CameraShakeInnerRadius = 0x2E8;
+const uintptr_t CameraShakeOuterRadius = 0x234;
+const uintptr_t CameraShakFalloff = 0x2F0;
+const uintptr_t CharacterOverrideAttrs = 0x1568;
+const uintptr_t BulletFireSpeed = 0x560;
+const uintptr_t BulletMomentum = 0x6D4;
+const uintptr_t BulletRange = 0x6E4;
+const uintptr_t BaseImpactDamage = 0x6C4;
+const uintptr_t VehicleDamageScale = 0x6D0;
+const uintptr_t LaunchGravityScale = 0x5D8;
+const uintptr_t ShootInterval = 0x5A0;
+const uintptr_t bHasSingleFireMode = 0x600;
+const uintptr_t bHasAutoFireMode = 0x601;
+const uintptr_t bHasBurstFireMode = 0x602;
+const uintptr_t BurstShootInterval = 0x640;
+const uintptr_t ReloadRate = 0x978;
+const uintptr_t AccessoriesVRecoilFactor = 0xBC8;
+const uintptr_t AccessoriesHRecoilFactor = 0xBD0;
+const uintptr_t AccessoriesRecoveryFactor = 0xBCC;
+const uintptr_t ShotGunCenterPerc = 0xC34;
+const uintptr_t ShotGunVerticalSpread = 0xC38;
+const uintptr_t ShotGunHorizontalSpread = 0xC3C;
+const uintptr_t GameDeviationFactor = 0xC2C;
+const uintptr_t GameDeviationAccuracy = 0xC30;
+const uintptr_t AccessoriesDeviationFactor = 0xBF0;
+const uintptr_t VehicleWeaponDeviationAngle = 0xC4C;
+const uintptr_t RecoilKickADS = 0xCF0;
+const uintptr_t HP = 0x344;
+const uintptr_t HPMax = 0x340;
+const uintptr_t Fuel = 0x424;
+const uintptr_t FuelMax = 0x420;
+const uintptr_t VehicleMovement = 0x1D50;
+const uintptr_t VehicleCommon = 0xBF0;
+const uintptr_t lastForwardSpeed = 0xCA8;
+const uintptr_t PickUpDataList = 0x940;
+const uintptr_t STPlayerController = 0x49E8;
+const uintptr_t PlayerCameraManager = 0x548;
+const uintptr_t CameraCache = 0x520;
+const uintptr_t ScopeFov = 0x1C54;
+const uintptr_t ScopeCameraComp = 0x1CD0;
+const uintptr_t IsFPPGameMode = 0xA10;
+const uintptr_t SwitchWeaponSpeedScale = 0x2BB4;
+const uintptr_t CharacterParachuteComponent = 0x1770;
+const uintptr_t CurrentFallSpeed = 0x230;
+const uintptr_t PoseState = 0x1798;
+const uintptr_t Position = 0x230;
+const uintptr_t CharacterMovement = 0x518;
+const uintptr_t SpringArmComp = 0x1CA0;
+const uintptr_t MeshContainer = 0x1AD8;
+const uintptr_t STPlayerController1 = 0x49E8;
+const uintptr_t HitPerform = 0x618;
+const uintptr_t bIsEngineStarted = 0xBB8;
+const uintptr_t ExtraBoostFactor = 0x1F5C;
+const uintptr_t Status = 0x4D0;
+const uintptr_t RelativeScale3D = 0x1FC;
+const uintptr_t ShootWeaponEntityComp = 0x12C0;
+const uintptr_t STCharacterMovement = 0x1DE0;
+const uintptr_t bIsFPPOnVehicle = 0x16F8;
+const uintptr_t IsNetFPP = 0x2030;
+const uintptr_t IsGameModeFpp = 0x9F8;
+const uintptr_t GameModeState = 0xB30;
+const uintptr_t IsCanSwitchFPP = 0xA11;
+const uintptr_t bIsGunADS = 0x10E1;
+const uintptr_t Kills = 0x720;
+const uintptr_t bIsWeaponFiring = 0x1788;
+const uintptr_t AvatarComponent2 = 0x2E08;
+const uintptr_t SynData = 0x7A0;
+const uintptr_t NetAvatarData = 0x3E8;
+const uintptr_t ServerZoneId = 0x96C;
 kaddr getRealOffset(kaddr offset){
     return (unsigned long)_dyld_get_image_vmaddr_slide(1)+offset;
 }
@@ -421,7 +556,7 @@ TNameEntryArray *GetGNames() {
     
     
     //exit
-    return ((TNameEntryArray *(*)()) ((unsigned long)_dyld_get_image_vmaddr_slide(1) +0x104510EF0)//saudgl GNmae entry // 3.1 VNG
+    return ((TNameEntryArray *(*)()) ((unsigned long)_dyld_get_image_vmaddr_slide(1) +GNames)//saudgl GNmae entry // 3.1 VNG
             )();
 }
 string getObjectPath(UObject *Object) {
